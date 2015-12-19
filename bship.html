@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Battleship</title>
+    <link rel="stylesheet" type="text/css" href="bship.css">
+    <script src='bship.js'> </script>
+</head>
+<body>
+
+<div class='player-labels'>
+	<div class='user-label'>User's Board</div>
+	<div class='user-label'>Engine's Board</div>
+</div>
+
+<div id='boardArea'></div>
+
+
+
+<div id='messageArea'></div>
+
+<div id='controlsArea' class="controlsArea">
+	<!--
+	<button onclick='alert(engine.getCellStatus(document.getElementById("cx").value,document.getElementById("cy").value));'>SHOW TITLE</button>
+	<button onclick='engine.setCellStatus(document.getElementById("cx").value,document.getElementById("cy").value,"title","WHATUP");'>CHANGE TITLE</button>
+	<input id='cx'/><input id='cy'/>
+	<button onclick='engine.show_connect_the_dots();'>Show IA</button>
+	<button onclick='engine.show_high_logical_probability();'>Show HighP</button>
+	<button onclick='engine.showstuff();'>Show Stuff</button>
+	-->
+	<div id="current_turn">BShip.js by Sergio Garcia</div>
+	<div id='div_props'></div>
+</div>
+
+<div id='windialog'>
+	<span id='winner'>User Such Wins</span>
+	<button onclick='location.reload();'>Play Again</button>
+</div>
+</body>
+</html>

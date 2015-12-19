@@ -1,0 +1,172 @@
+body {
+	margin: 0px;
+	position: relative;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333333;
+	background-color: #ffffff;
+	width: 100% !important;
+	height: auto;
+	overflow-x: hidden !important;
+	-webkit-font-smoothing: antialiased;
+}
+.board {
+	margin-top: 5px;
+	margin-left: 5px;
+	width: 48vw;
+	height: 49vh;
+	border: 1px;
+	border-style: solid;
+	border-color: black;
+	background-color: white;
+	float: left;
+}
+
+.row {
+	display: table-row;
+}
+
+.cell {
+	display: table-cell;
+	width: calc(49vw/5);
+	height: calc(48vh/5);
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+	background-color: green;
+	flaot: left;
+	font-size: 16pt;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.cell:hover{ 
+	background-color: darkgreen;
+	cursor: pointer;
+	transition: background-color 150ms linear;
+}
+
+.ship {
+	display: table-cell;
+	width: calc(49vw/5);
+	height: calc(48vh/5);
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+	background-color: gray;
+	border-radius: 5pt;
+	flaot: left;
+	font-size: 16pt;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+.ship:hover{ 
+	background-color: #454545;
+	cursor: pointer;
+	transition: background-color 150ms linear;
+}
+
+.miss {
+	display: table-cell;
+	width: calc(49vw/5);
+	height: calc(48vh/5);
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+	background-color: darkblue;
+	flaot: left;
+	font-size: 16pt;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+}
+
+.hit {
+	display: table-cell;
+	width: calc(49vw/5);
+	height: calc(48vh/5);
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+	background-color: black;
+	border-radius: 5pt;
+	flaot: left;
+	font-size: 16pt;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+}
+
+
+.player-labels {
+	display: table-row;
+}
+
+.user-label {
+	display: table-cell;
+	width: 50vw;
+	height: 10vh;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 10vh;
+	color: white;
+	font-size: 3vh;
+	background-color: black;
+}
+
+.controlsArea {
+	top: 30pt;
+	position: relative;
+	float: left;
+}
+
+#current_turn {
+	position: fixed;
+	bottom: 20vh;
+	right: 2vw;
+	font-size: 3vw;
+	text-shadow: 2px 2px 2px black;
+	color: gray;
+}
+
+#messageArea {
+	width: 80vw;
+	font-size: 16pt;
+	margin-left: 10pt;
+}
+
+#windialog {
+	display: none;
+	float: left;
+	width: 70vw;
+	height: 70vh;
+	position: fixed;
+	top: 15vh;
+	left: 15vw;
+	background-color: white;
+	box-shadow: 0 0 20pt black;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 60vh;
+}
+
+#windialog span {
+	color: black;
+	font-size: 5vw;
+	text-shadow: 2px 2px 2px gray;
+}
+
+#windialog button {
+	width: 25vw;
+	padding: 1vh;
+	font-size: 2vw;
+	float: left;
+	position: absolute;
+	top: 40vh;
+	left: 23vw;
+}
